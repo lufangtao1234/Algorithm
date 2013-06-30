@@ -26,5 +26,11 @@
     <ClInclude Include="InsertSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SelectionSortr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

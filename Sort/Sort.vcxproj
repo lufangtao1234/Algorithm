@@ -80,6 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InsertSort.h" />
+    <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="SelectionSortr.h" />
     <ClInclude Include="SortData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
