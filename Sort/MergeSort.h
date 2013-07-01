@@ -18,30 +18,34 @@ void Merge(int a[],int p,int q, int r)
 		*(R+j)=a[q+1+j];
 	i=p;
 	j=q+1;
-	while(k<r)
+	while(k<=r)
 	{
 		if(i==q+1)
-			while(j<r&&k<r)
+		{
+			while(j<=r&&k<=r)
 			{
 				a[k++]=*(R+j-q-1);
 				j++;
 			}
-			if(j==r)
-				while(i<=q&&k<r)
-				{
-					a[k++]=*(L+i-p);
-					i++;
-				}
-				if(*(R+j-q-1)<*(L+i-p))
-				{
-					a[k++]=*(L+i-p);
-					i++;
-				}
-				else
-				{
-					a[k++]=*(R+j-q-1);
-					j++;
-				}			
+		}
+		else if(j==r+1)
+		{
+			while(i<=q&&k<=r)
+			{
+				a[k++]=*(L+i-p);
+				i++;
+			}
+		}
+		else if(*(R+j-q-1)>*(L+i-p))
+		{
+			a[k++]=*(L+i-p);
+			i++;
+		}
+		else
+		{
+			a[k++]=*(R+j-q-1);
+			j++;
+		}			
 	}
 
 }
