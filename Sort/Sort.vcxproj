@@ -82,6 +82,7 @@
     <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SelectionSortr.h" />
     <ClInclude Include="SortData.h" />
   </ItemGroup>
