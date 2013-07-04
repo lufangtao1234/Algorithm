@@ -5,6 +5,7 @@
 #include"InsertSort.h"
 #include"SelectionSortr.h"
 #include"MergeSort.h"
+#include"HeapSort.h"
 int main()
 {
 	clock_t start,finish;
@@ -15,7 +16,8 @@ int main()
 	printSortData();
 	//InsertSort(sortData,sortLength);
 	//SelectionSort(sortData,sortLength);
-	MergeSort(sortData,0,7);
+	//MergeSort(sortData,0,7);
+	HEAPSORT(sortData,sortLength-1);
 	printf("After Sort:");
 	printSortData();
 	finish=clock();

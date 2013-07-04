@@ -79,6 +79,7 @@
     <ClCompile Include="InsertSort.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HeapSort.h" />
     <ClInclude Include="InsertSort.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SelectionSortr.h" />
