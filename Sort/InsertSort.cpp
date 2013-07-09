@@ -2,29 +2,23 @@
 #include<stdlib.h>
 #include<time.h>
 #include"SortData.h"
-#include"InsertSort.h"
-#include"SelectionSortr.h"
-#include"MergeSort.h"
-#include"HeapSort.h"
 #include"QuickSort.h"
 int main()
 {
 	clock_t start,finish;
 	double duration;
-	start=clock();
+	
 	int wait;
 	printf("Before Sort:");
-	printSortData();
-	//InsertSort(sortData,sortLength);
-	//SelectionSort(sortData,sortLength);
-	//MergeSort(sortData,0,7);
-	//HEAPSORT(sortData,sortLength-1);
-	QUICKSORT(sortData,0,7);
-	printf("After Sort:");
-	printSortData();
+	getRandData();
+	printRandData();
+	start=clock();
+	QUICKSORT(randData,0,RAND_NUM-1);
 	finish=clock();
+	printf("After Sort:");
+	printRandData();
 	duration = (double)(finish - start) / CLOCKS_PER_SEC;
-	printf( "%f seconds\n", duration );
+	printf( "Sort Used time:%f seconds\n", duration );
 	scanf("%d",&wait);
 }
 

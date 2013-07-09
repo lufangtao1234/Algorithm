@@ -1,4 +1,9 @@
 #include<stdio.h>
+/*
+插入排序：
+数组a：待排序数组
+length:数组长度
+*/
 void InsertSort(int a[],int length)
 {
 	int key;

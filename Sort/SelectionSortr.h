@@ -1,4 +1,9 @@
 #include<stdio.h>
+/*
+选择排序：
+数组a：待排序数组
+length:数组长度
+*/
 void SelectionSort(int a[],int length)
 {
 	int i,j,min,swap,index;
