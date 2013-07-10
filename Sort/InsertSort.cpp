@@ -2,18 +2,18 @@
 #include<stdlib.h>
 #include<time.h>
 #include"SortData.h"
-#include"QuickSort.h"
+#include"CountSort.h"
 int main()
 {
 	clock_t start,finish;
 	double duration;
-	
+
 	int wait;
 	printf("Before Sort:");
 	getRandData();
 	printRandData();
 	start=clock();
-	QUICKSORT(randData,0,RAND_NUM-1);
+	CountSort(randData,RAND_NUM);
 	finish=clock();
 	printf("After Sort:");
 	printRandData();

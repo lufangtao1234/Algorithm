@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4A4EB820-B74F-4181-B880-C6D17813C7EA}</ProjectGuid>
+    <ProjectGuid>{95500765-CF5C-4BA0-A56D-0F4E8D5DF376}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Sort</RootNamespace>
+    <RootNamespace>Daily</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,18 +76,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="InsertSort.cpp" />
+    <ClInclude Include="SpecialNumber.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BubbleSort.h" />
-    <ClInclude Include="CountSort.h" />
-    <ClInclude Include="HeapSort.h" />
-    <ClInclude Include="InsertSort.h" />
-    <ClInclude Include="MergeSort.h" />
-    <ClInclude Include="QuickSort.h" />
-    <ClInclude Include="SelectionSortr.h" />
-    <ClInclude Include="ShellSort.h" />
-    <ClInclude Include="SortData.h" />
+    <ClCompile Include="OotPut.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

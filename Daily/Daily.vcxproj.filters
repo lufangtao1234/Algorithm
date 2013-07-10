@@ -15,37 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="InsertSort.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
+    <ClInclude Include="SpecialNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SortData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InsertSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SelectionSortr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MergeSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HeapSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="QuickSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BubbleSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ShellSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CountSort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="OotPut.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

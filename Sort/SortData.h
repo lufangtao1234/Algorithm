@@ -1,3 +1,5 @@
+#ifndef SORT_DATA
+#define SORT_DATA
 #include<stdio.h>
 #include<stdlib.h>
 #define RAND_NUM 10000
@@ -31,3 +33,4 @@ void printRandData()
 	}
 	printf("\n");
 }
+#endif
