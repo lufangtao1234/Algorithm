@@ -1,7 +1,9 @@
 #include"SpecialNumber.h"
+#include"PascalTriangle.h"
 void main()
 {
 	int wait;
-	SpecialNumber();
+	PascalTriangle(10);
+	//SpecialNumber();
 	scanf("%d",&wait);
 }

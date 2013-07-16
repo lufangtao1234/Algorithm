@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"BinarySearchTree.h"
+#include"RedBlackTree.h"
 void main()
 {
 	int wait;
@@ -36,7 +36,7 @@ void main()
 	//DCLL_LIST_SHOW(gurard);
 	//DCLL_LIST_DELETE(gurard,x2);
 	//DCLL_LIST_SHOW(gurard);
-	BSTree *root=NULL;
+	/*BSTree *root=NULL;
 	BSTree *e1=(BSTree*)malloc(sizeof(BSTree));
 	BSTree *e2=(BSTree*)malloc(sizeof(BSTree));
 	BSTree *e3=(BSTree*)malloc(sizeof(BSTree));
@@ -63,6 +63,24 @@ void main()
 	printf("%d\n",(*BINARYSEARCHTREE_MIN(root)).key);
 	printf("%d\n",(*BINARYSEARCHTREE_SUCCESSOR(e2)).key);
 	BINARYSEARCHTREE_DELETE(root,e1);
-	BINARYSEARCHTREE_PRINT(root);
+	BINARYSEARCHTREE_PRINT(root);*/
+	RB_Tree *NIL=(RB_Tree*)malloc(sizeof(RB_Tree));
+	(*NIL).Parent=NIL;
+	(*NIL).Left=NIL;
+	(*NIL).Right=NIL;
+	RB_Tree *root=NIL;
+	RB_Tree *e1=(RB_Tree*)malloc(sizeof(RB_Tree));
+	RB_Tree *e2=(RB_Tree*)malloc(sizeof(RB_Tree));
+	RB_Tree *e3=(RB_Tree*)malloc(sizeof(RB_Tree));
+	RB_Tree *e4=(RB_Tree*)malloc(sizeof(RB_Tree));
+	(*e1).key=3;
+	(*e2).key=1;
+	(*e3).key=2;
+	(*e4).key=5;
+	RB_INSERT(root,e1,NIL);
+	RB_INSERT(root,e2,NIL);
+	RB_INSERT(root,e3,NIL);
+	RB_INSERT(root,e4,NIL);
+	RB_PRINT(root,NIL);
 	scanf_s("%d",&wait);
 }

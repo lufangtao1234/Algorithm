@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="PascalTriangle.h" />
     <ClInclude Include="SpecialNumber.h" />
   </ItemGroup>
   <ItemGroup>

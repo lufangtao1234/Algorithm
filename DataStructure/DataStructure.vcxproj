@@ -80,6 +80,7 @@
     <ClInclude Include="Data.h" />
     <ClInclude Include="DoubleCircularLinkedList.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="RedBlackTree.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
