@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BinomialHeap.h" />
     <ClInclude Include="BTree.h" />
   </ItemGroup>
   <ItemGroup>
