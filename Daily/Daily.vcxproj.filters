@@ -21,9 +21,33 @@
     <ClInclude Include="PascalTriangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MaxSequenceSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynomial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BucketSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OotPut.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="List.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

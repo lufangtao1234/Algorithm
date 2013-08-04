@@ -76,10 +76,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BucketSort.h" />
+    <ClInclude Include="GCD.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="MaxSequenceSum.h" />
     <ClInclude Include="PascalTriangle.h" />
+    <ClInclude Include="Polynomial.h" />
+    <ClInclude Include="Pow.h" />
     <ClInclude Include="SpecialNumber.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="List.cpp" />
     <ClCompile Include="OotPut.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
