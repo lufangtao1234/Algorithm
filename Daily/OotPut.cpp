@@ -5,7 +5,8 @@
 #include"Pow.h"
 #include"List.h"
 #include"Polynomial.h"
-#include"Stack.h"
+//#include"Stack.h"
+#include"StackEx.h"
 void main()
 {
 	int wait,i;
@@ -70,7 +71,8 @@ void main()
 	////PrintPtrPolynomial(PtrPolynomialAdd(P,P2));
 	//printf("\n");
 	//PrintPtrPolynomial(PtrPolynomialMult(P,P2));
-	Stack s=CreateStack();
+	//Stack s=CreateStack();
+	/*PtrToAStck s=CreateAStack();
 	ElementType e1=1;
 	ElementType e2=2;
 	ElementType e3=3;
@@ -82,6 +84,14 @@ void main()
 	printf("%d\n",POP(s));
 	printf("%d\n",POP(s));
 	printf("%d\n",POP(s));
-	printf("%d\n",POP(s));
+	printf("%d\n",POP(s));*/
+	//	char s1[]={'{','}','{','{','[','(',')',')','}','}'};
+	//printf("{}{{[()]}}是否为正确：%s",isRightBracket(s1,10)==1?"是":"不是");
+	char s1[]={'1','+','2','*','3','+','(','4','*','5','+','6',')','*','7'};
+	char *s2=InfixToSuffix(s1,15);
+	for ( i = 0; i < 15; i++)
+	{
+		printf("%c",s2[i]);
+	}
 	scanf("%d",&wait);
 }
