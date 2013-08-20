@@ -76,11 +76,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AVLTree.h" />
+    <ClInclude Include="BinHeap.h" />
+    <ClInclude Include="BiThrTree.h" />
+    <ClInclude Include="BiTree.h" />
+    <ClInclude Include="BSTree.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="HashQuad.h" />
+    <ClInclude Include="HashSep.h" />
     <ClInclude Include="List.h" />
+    <ClInclude Include="List_C.h" />
+    <ClInclude Include="Queue_A.h" />
+    <ClInclude Include="Queue_L.h" />
+    <ClInclude Include="Stack_A.h" />
+    <ClInclude Include="Stack_L.h" />
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AVLTree.cpp" />
+    <ClCompile Include="BinHeap.cpp" />
+    <ClCompile Include="BiThrTree.cpp" />
+    <ClCompile Include="BiTree.cpp" />
+    <ClCompile Include="BSTree.cpp" />
+    <ClCompile Include="HashQuad.cpp" />
+    <ClCompile Include="HashSep.cpp" />
     <ClCompile Include="List.cpp" />
+    <ClCompile Include="List_C.cpp" />
+    <ClCompile Include="Queue_A.cpp" />
+    <ClCompile Include="Queue_L.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Stack_A.cpp" />
+    <ClCompile Include="Stack_L.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

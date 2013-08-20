@@ -76,11 +76,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BiTreeY.h" />
     <ClInclude Include="BucketSort.h" />
     <ClInclude Include="GCD.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="MaxSequenceSum.h" />
     <ClInclude Include="PascalTriangle.h" />
+    <ClInclude Include="PatternMatching.h" />
     <ClInclude Include="Polynomial.h" />
     <ClInclude Include="Pow.h" />
     <ClInclude Include="SpecialNumber.h" />

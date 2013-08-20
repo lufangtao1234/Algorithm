@@ -45,6 +45,12 @@
     <ClInclude Include="StackEx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PatternMatching.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BiTreeY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OotPut.cpp">

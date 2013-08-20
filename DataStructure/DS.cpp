@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"RedBlackTree.h"
+#include"BiTree.h"
+//#include"RedBlackTree.h"
 void main()
 {
 	int wait;
@@ -64,7 +65,7 @@ void main()
 	printf("%d\n",(*BINARYSEARCHTREE_SUCCESSOR(e2)).key);
 	BINARYSEARCHTREE_DELETE(root,e1);
 	BINARYSEARCHTREE_PRINT(root);*/
-	RB_Tree *NIL=(RB_Tree*)malloc(sizeof(RB_Tree));
+	/*RB_Tree *NIL=(RB_Tree*)malloc(sizeof(RB_Tree));
 	(*NIL).Parent=NIL;
 	(*NIL).Left=NIL;
 	(*NIL).Right=NIL;
@@ -81,6 +82,10 @@ void main()
 	RB_INSERT(root,e2,NIL);
 	RB_INSERT(root,e3,NIL);
 	RB_INSERT(root,e4,NIL);
-	RB_PRINT(root,NIL);
+	RB_PRINT(root,NIL);*/
+	BiTree T;
+	char s[]={'A','B','C','-','-','D','E','-','G','-','-','F','-','-','-'};
+	T=CreateBiTree(s);
+	InOrderTraverseRecursion(T);
 	scanf_s("%d",&wait);
 }

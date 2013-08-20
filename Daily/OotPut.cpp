@@ -1,3 +1,5 @@
+#include<stdlib.h>
+#include<time.h>
 #include"SpecialNumber.h"
 #include"PascalTriangle.h"
 #include"MaxSequenceSum.h"
@@ -7,10 +9,12 @@
 #include"Polynomial.h"
 //#include"Stack.h"
 #include"StackEx.h"
+#include"PatternMatching.h"
 void main()
 {
 	int wait,i;
-
+	clock_t start,finish;
+	double duration;
 	//int a[]={-6,12,-1,-15,6,-1,9};
 	//int maxSum,start,end;
 	////maxSum=MaxSequenceSumN3(a,7,start,end);
@@ -87,11 +91,45 @@ void main()
 	printf("%d\n",POP(s));*/
 	//	char s1[]={'{','}','{','{','[','(',')',')','}','}'};
 	//printf("{}{{[()]}}是否为正确：%s",isRightBracket(s1,10)==1?"是":"不是");
-	char s1[]={'1','+','2','*','3','+','(','4','*','5','+','6',')','*','7'};
+	/*char s1[]={'1','+','2','*','3','+','(','4','*','5','+','6',')','*','7'};
 	char *s2=InfixToSuffix(s1,15);
 	for ( i = 0; i < 15; i++)
 	{
-		printf("%c",s2[i]);
-	}
+	printf("%c",s2[i]);
+	}*/
+	char T1[13]={'a','b','a','b','c','a','b','a','b','a','b','a','b'};
+	char T2[100]={
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','c',
+		'a','b','a','b','a',
+		'a','b','a','b','c'
+	};
+	char S[5]={'a','b','a','b','a'};
+	start=clock();
+	printf("T1 KMP_Index %d\n",KMP_Index(T1,S,13,5,0));
+	finish=clock();
+	duration = (double)(finish - start) / CLOCKS_PER_SEC;
+	printf( "T1 KMP_Index Used time:%f seconds\n", duration );
+	start=clock();
+	printf("T2 KMP_Index %d\n",KMP_Index(T2,S,100,5,0));
+	finish=clock();
+	duration = (double)(finish - start) / CLOCKS_PER_SEC;
+	printf( "T2 KMP_Index Used time:%f seconds\n", duration );
 	scanf("%d",&wait);
 }
