@@ -19,6 +19,7 @@ static int Height(Position P)
 	else 
 		return P->Height;
 }
+
 static Position SingleRotateWithLeft(Position K2)
 {
 	Position K1;
